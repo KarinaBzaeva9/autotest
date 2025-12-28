@@ -4,7 +4,6 @@ from selenium import webdriver
 @pytest.fixture()
 def browser():
    browser=webdriver.Firefox()
-   browser.maximize_window()
    browser.implicitly_wait(10)
    yield browser
    browser.close()
