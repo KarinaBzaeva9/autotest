@@ -7,4 +7,4 @@ def browser():
    browser.maximize_window()
    browser.implicitly_wait(10)
    yield browser
-   
+   browser.close()

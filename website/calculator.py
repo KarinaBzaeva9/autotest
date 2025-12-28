@@ -1,6 +1,4 @@
 from selenium.webdriver.common.by import By
-
-
 class calculator:
     def __init__(self,browser):
         self.browser=browser
@@ -16,5 +14,4 @@ class calculator:
         search_button.click()  
         
         select_good = self.browser.find_element(By.CSS_SELECTOR, "li.calculator-product-search-item[data-pickable='true']")
-        select_good.click()         
-    
+        select_good.click()
